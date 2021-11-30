@@ -1,0 +1,39 @@
+{
+  "name": "lynx-dotenv",
+  "version": "0.0.1",
+  "description": "Dotenv support for the lynx framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build",
+    "postinstall": "mv dist/* ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellyfishsolutions/lynx-dotenv.git"
+  },
+  "author": "Luca Roverelli <luca.roverelli@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jellyfishsolutions/lynx-dotenv/issues"
+  },
+  "homepage": "https://github.com/jellyfishsolutions/lynx-dotenv#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "lynx-framework": "1.x"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^5.0.1",
+    "merge2": "^1.3.0",
+    "typescript": "^3.9.6"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true
+  }
+}
